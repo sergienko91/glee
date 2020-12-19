@@ -6,6 +6,101 @@
 
 
 
+.header {
+    padding: 40px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+    }
+    &__list-item + .menu__list-item {
+        padding-left: 34px;
+    }
+    &__list-link {
+        color: #436372;
+        font-size: 15px;
+        @extend %rubik-500;
+        &:hover {
+            border-bottom: 1px solid #436372;
+        }
+    }
+}
+
+.user-nav {
+    display: flex;
+    &__link {
+        position: relative;
+    }
+    &__search-link {
+        background-color: #edf1f4;
+        padding: 18px;
+        border-radius: 50%;
+    }
+    &__link-block {
+        display: flex;
+        background-color: #fcd7b6;
+        margin: 0 18px;
+        padding: 0px 13px;
+        border-radius: 25px;
+        align-items: center;
+        position: relative;
+        .user-nav__link {
+            margin: 0px 28px;
+        }
+    }
+    &__link-block::after {
+        content: "|";
+        font-size: 35px;
+        color: #fde7d3;
+        left: 50%;
+        position: absolute;
+    }
+    &__num {
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        background-color: #fff;
+        padding: 5px;
+        text-align: center;
+        line-height: 8px;
+        top: -6px;
+        right: -6px;
+
+    }
+    &__menu-link {
+        background-color: #a3bbc8;
+        border-radius: 50%;
+        padding: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @import 'media';
